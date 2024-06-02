@@ -7,8 +7,6 @@ const router = Router();
 
 router.post("/", async ({ body }, res) => {
   try {
-    console.log("/register route", body);
-
     const registerDetails = await registerUser(body);
     successResponse({ res, data: registerDetails });
   } catch (error) {

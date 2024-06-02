@@ -1,6 +1,6 @@
 import User from "../../models/User";
 import { generateOtp } from "../../utils/generateOtp";
-import sendSms from "../twilio/sendSms";
+import sendSms from "../../utils/twilio/sendSms";
 import { CreateUserBody } from "./d.dto";
 
 export async function createUser(body: CreateUserBody) {

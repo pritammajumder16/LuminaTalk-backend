@@ -4,7 +4,7 @@ import { corsConfig } from "./constants/corsConfig";
 import cors from "cors";
 import router from "./router/routes";
 import bodyParser from "body-parser";
-import connectDB from "./services/mongo/setup";
+import connectDB from "./utils/mongo/setup";
 dotenv.config();
 
 const port = process.env.PORT || 3000;
